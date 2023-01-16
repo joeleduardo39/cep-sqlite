@@ -26,6 +26,9 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
+/*Created by Joel Eduardo
+ **************************
+ */
 public class MainActivity extends AppCompatActivity {
 
     private static final Pattern CEP_MODELO = Pattern.compile("[0-9]{5}-[0-9]{3}");
@@ -164,7 +167,7 @@ public class MainActivity extends AppCompatActivity {
             });
             dialog.setNegativeButton("Não", (dialogInterface, i) -> carregarListaCep());
 
-            //Exibir dialog
+
             dialog.create();
             dialog.show();
 
